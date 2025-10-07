@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data is the Solution! – Mory Toure</title>
+  <meta name="description" content="Portfolio of Mory Toure – Climate & Health Data Scientist. Projects, publications, and contact." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1a2f;
+      --accent:#ff6a00;   /* heat */
+      --accent2:#2ee6b7;  /* health */
+      --text:#eaf0ff;
+      --muted:#9fb2d6;
+      --line:#213155;
+      --card:#0e1730;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1000px 600px at 10% -10%, rgba(255,106,0,.07), transparent), 
+                               radial-gradient(1000px 700px at 100% 110%, rgba(46,230,183,.08), transparent),
+                               var(--bg);
+               color:var(--text);font-family:Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(8,13,24,.7);backdrop-filter:saturate(140%) blur(10px);
+            border-bottom:1px solid var(--line);z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo-dot{width:12px;height:12px;border-radius:50%;background:conic-gradient(from 180deg, var(--accent), #ffa45b);box-shadow:0 0 16px var(--accent)}
+    .logo-heart{width:12px;height:12px;border-radius:50%;background:conic-gradient(from 180deg, var(--accent2), #8ff5db);box-shadow:0 0 16px var(--accent2)}
+    .navlinks{display:flex;gap:18px}
+    .navlinks a{padding:8px 12px;border-radius:10px;color:var(--muted)}
+    .navlinks a:hover{background:#132140;color:var(--text)}
+    section{padding:70px 0}
+    h1{font-size:46px;margin:0 0 10px}
+    h2{font-size:28px;margin:0 0 16px}
+    p{color:#ccdaf7}
+    .hero{border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;gap:26px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:360px 1fr}}
+    .avatar{width:100%;max-width:360px;border-radius:18px;border:1px solid var(--line);background:#0b1428}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 22px}
+    .badge{border:1px solid #2a3d63;color:#cfe0ff;padding:6px 10px;border-radius:999px;font-size:13px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid #2a3d63;background:#132140;color:#e6eeff;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#ff9747);color:#111;border-color:#ff7a1d}
+    .grid{display:grid;gap:18px}
+    @media(min-width:860px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:linear-gradient(180deg,var(--card),#0b142b);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card h3{margin:6px 0 6px;font-size:18px}
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .tag{font-size:12px;color:#b9c9ec;border:1px solid #2e4270;padding:4px 8px;border-radius:999px}
+    .kv{display:grid;grid-template-columns:150px 1fr;gap:12px;margin:8px 0}
+    .anchor{scroll-margin-top:84px}
+    footer{padding:24px 0;border-top:1px solid var(--line);color:#9db3d8}
+    .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="logo-dot" aria-hidden="true"></span><span class="logo-heart" aria-hidden="true"></span> Data is the Solution!</div>
+        <div class="navlinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero anchor">
+      <div class="container hero-grid">
+        <img class="avatar" src="assets/mory.jpg" alt="Portrait of Mory Toure" />
+        <div>
+          <h1>Mory Toure — Climate & Health Data Scientist</h1>
+          <p>I turn climate and health data into actionable insights. My work blends <strong>AI/ML</strong>, <strong>statistical modeling</strong>, and <strong>impact‑based climate services</strong> to support early warning and decision‑making in West Africa.</p>
+          <div class="badges">
+            <span class="badge">Heatwave & Health</span>
+            <span class="badge">Machine Learning</span>
+            <span class="badge">Sub‑seasonal Forecasting</span>
+            <span class="badge">Impact‑based Services</span>
+          </div>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="mailto:morytoure2@gmail.com">Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/mory-toure-59a301135/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/MoryClimat" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="anchor">
+      <div class="container">
+        <h2>About</h2>
+        <div class="card">
+          <p>I am a Climate Services Specialist at ANACIM (Senegal) and a PhD candidate in Atmospheric & Climate Sciences (ESP‑UCAD). I design early‑warning products and publish on AI‑assisted prediction of heatwave‑related hospitalizations and imputation of missing meteorological data.</p>
+          <div class="kv">
+            <div class="muted">Focus</div><div>Extreme heat, health impacts, AI/ML for climate, sub‑seasonal prediction.</div>
+            <div class="muted">Education</div><div>Engineering degree in Meteorology (IHFR/Algeria), ENM France; PhD candidate at ESP‑UCAD.</div>
+            <div class="muted">Languages</div><div>French (native), English (B2), Arabic, Wolof.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="anchor">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Heatwave‑Related Hospitalizations (Matam)</h3>
+            <p>Machine‑learning framework to predict health burden during heatwaves using TMAX/HI and hospital data (2017–2022).</p>
+            <div class="tagrow">
+              <span class="tag">XGB • RF • SHAP</span><span class="tag">Health & Climate</span><span class="tag">Early Warning</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Imputing Missing Meteorological Data</h3>
+            <p>Benchmarking DT, RF, XGB, and Kriging to fill gaps across Senegal’s synoptic stations (2015–2024 GSOD).</p>
+            <div class="tagrow">
+              <span class="tag">R² • RMSE • MAE</span><span class="tag">DT • RF • XGB • OK</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Sub‑seasonal Temperature Prediction</h3>
+            <p>AI‑based approach for week‑to‑month summer temperature outlooks in West Africa; integration into climate services.</p>
+            <div class="tagrow">
+              <span class="tag">AI for S2S</span><span class="tag">Operational Prototype</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="anchor">
+      <div class="container">
+        <h2>Selected Publications</h2>
+        <div class="grid cols-2">
+          <div class="card">
+            <h3>Machine Learning Approaches for Imputing Missing Meteorological Data in Senegal</h3>
+            <p><em>Applied Computing and Geosciences, 2025.</em> <a href="https://doi.org/10.1016/j.acags.2025.100281" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+          <div class="card">
+            <h3>Machine Learning‑Based Prediction of Heatwave‑Related Hospitalizations: Matam, Senegal</h3>
+            <p><em>IJERPH, 2025.</em> <a href="https://doi.org/10.3390/ijerph22091349" target="_blank" rel="noopener">DOI</a> · <a href="https://www.preprints.org/manuscript/202503.1797/v1" target="_blank" rel="noopener">Preprint</a></p>
+          </div>
+          <div class="card">
+            <h3>Subseasonal Prediction of Summer Temperature in West Africa Using AI</h3>
+            <p><em>International Journal of Intelligent Systems, 2024.</em> <a href="https://doi.org/10.1155/2024/8869267" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+          <div class="card">
+            <h3>Heat waves and health risks in Northern Senegal</h3>
+            <p><em>IJERPH, 2022.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="anchor">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid cols-3">
+          <div class="card"><h3>Technical</h3>
+            <div class="tagrow">
+              <span class="tag">Python</span><span class="tag">R</span><span class="tag">GIS (QGIS/ArcGIS)</span>
+              <span class="tag">Statistical Modeling</span><span class="tag">Machine Learning</span>
+              <span class="tag">Impact‑based Forecasting</span>
+            </div>
+          </div>
+          <div class="card"><h3>Climate & Health</h3>
+            <div class="tagrow">
+              <span class="tag">Heatwave & Health</span><span class="tag">Risk Assessment</span>
+              <span class="tag">Early Warning</span><span class="tag">User‑centered services</span>
+            </div>
+          </div>
+          <div class="card"><h3>Tools</h3>
+            <div class="tagrow">
+              <span class="tag">Power BI</span><span class="tag">Matplotlib</span><span class="tag">Pandas</span>
+              <span class="tag">Surfer</span><span class="tag">Kobo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="anchor">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <div class="kv"><div class="muted">Email</div><div><a href="mailto:morytoure2@gmail.com">morytoure2@gmail.com</a></div></div>
+          <div class="kv"><div class="muted">LinkedIn</div><div><a href="https://www.linkedin.com/in/mory-toure-59a301135/" target="_blank" rel="noopener">mory‑toure‑59a301135</a></div></div>
+          <div class="kv"><div class="muted">GitHub</div><div><a href="https://github.com/MoryClimat" target="_blank" rel="noopener">MoryClimat</a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="year"></span> Mory Toure · Data is the Solution!</div>
+      <div>Theme: dark — Heat (orange) × Health (teal)</div>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
